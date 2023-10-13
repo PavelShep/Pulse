@@ -13,7 +13,7 @@
 		&__subheader {
 			font-size: 21px;
 		}
-		&__icons{
+		&__icons {
 			margin-top: 50px;
 			max-width: 380px;
 		}
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 768px){
-	.container{
+	.container {
 		min-width: 530px;
 		padding: 0px 10px;
 	}
@@ -98,9 +98,6 @@
 		padding: 0 12px;
 	}
 	.header {
-		&__hidden320 {
-			display: none;
-		}
 		&__logo {
 			max-width: 200px;
 			margin-right: 20px;
