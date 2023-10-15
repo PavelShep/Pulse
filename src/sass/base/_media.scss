@@ -97,6 +97,14 @@
 	.consultation {
 		padding: 80px 25px 72px 25px;
 	}
+	.carousel {
+		&__inner {
+			width: 100%;
+		}
+		img{ 
+			width: 100%;
+		}
+	}
 }
 
 @media (max-width: 575px) {
@@ -178,6 +186,14 @@
 		.feed-form {
             margin: 36px auto 0 auto;
         }
+	}
+	.carousel {
+		&__inner {
+			width: 100%;
+		}
+		img{ 
+			width: 100%;
+		}
 	}
 
 }
