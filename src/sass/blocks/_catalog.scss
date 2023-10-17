@@ -43,12 +43,20 @@
     }
     &__content {
         margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &__item {
         width: 303px;
         min-height: 442px;
         border: 2px solid #e8e8e8;
         padding: 20px 20px 26px 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
         &__img {
             display: block;
             margin: 0 auto;
@@ -80,6 +88,7 @@
             font-style: normal;
             font-weight: 500;
             text-decoration-line: underline;
+            text-transform: uppercase;
             &:hover {
                 color: $main-color;
             }
@@ -108,5 +117,67 @@
             font-style: normal;
             font-weight: 700;
         }
-    }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            padding-left: 19px;
+            padding-bottom: 0px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            transition: 0.5s all;
+            list-style-type: none;
+            &_active {
+                transform: translateX(-100%);
+                margin-right: 0px;
+            }
+            li {
+                position: relative;
+                color: #555;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                margin-bottom: 20px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 7px;
+                }
+            }
+        }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            color: $main-color;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            &:hover {
+                color: $main-color;
+            }   
+        }   
+    } 
 }
