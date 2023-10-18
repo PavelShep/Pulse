@@ -22,6 +22,11 @@
 	.consultation {
 		padding: 80px 25px 72px 25px;
 	}
+	.catalog {
+		&__content {
+			justify-content: space-around;
+		}
+	}
 }
 
 @media (max-width: 768px){
