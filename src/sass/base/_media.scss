@@ -27,6 +27,11 @@
 			justify-content: space-around;
 		}
 	}
+	.footer {
+		iframe {
+			width: 100%;
+		}
+	}
 }
 
 @media (max-width: 768px){
