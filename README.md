@@ -39,7 +39,7 @@ You can see a Figma template [here](https://www.figma.com/file/zWtpNVgBT91sEg2li
 
 ### Directory Structure
 - `src/`: Contains the source code for HTML, SCSS, JavaScript, and other assets.
-- `dist/`: The compiled and minified files ready for production use.(This folder doesn't exist yet!)
+- `dist/`: The compiled and minified files ready for production use.
 - `gulpfile.js`: Configuration for Gulp tasks.
 - `package.json`: Lists project dependencies.
 
